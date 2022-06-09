@@ -1,0 +1,704 @@
+body {
+    margin: 0;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+h4 {
+    font-size: 16px;
+    color: #0A3847;
+    margin: 0px;
+}
+
+h3 {
+    font-size: 18px;
+    color: #0A3847;
+    margin: 0px;
+}
+
+h2 {
+    font-size: 18px;
+    color: #0A3847;
+}
+
+h1 {
+    font-size: 24px;
+    color: #0A3847;
+}
+
+p {
+    font-size: 13px;
+    color: #666666;
+}
+
+/* header */
+header {
+    background-color: #fb6100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+}
+
+.headerLogo img {
+    height: 32px;
+}
+
+.headerAddress h4 {
+    color: white;
+}
+
+.headerIcons img {
+    height: 24px;
+}
+
+/* orderPage */
+.orderPage {
+    display: flex;
+}
+
+/* foodSelection */
+.foodSelection {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.footImg {
+    height: 200px;
+    object-fit: cover;
+}
+
+.round {
+    position: relative;
+    top: -260px;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+}
+
+.roundIcon {
+    width: 128px;
+    height: 128px;
+    background-color: #F8F5F2;
+    border: 1px solid rgb(194 194 194);
+    border-radius: 50%;
+    position: absolute;
+    top: 200px;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.round img {
+    height: 70px;
+}
+
+.foodVariants {
+    margin: 16px;
+}
+
+.foodVariants img {
+    height: 24px;
+}
+
+.titleBox {
+    margin: 16px;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titleIcon {
+    display: flex;
+}
+
+.titleIcon img {
+    height: 18px;
+    margin-left: 6px;
+    border: 1px solid #D7D7D7;
+    border-radius: 3px;
+    margin-bottom: 16px;
+    padding: 13px;
+    display: flex;
+    cursor: pointer;
+}
+
+.titleIcon img:hover {
+    border: 1px solid #125fca;
+}
+
+.evaluation {
+    display: flex;
+    align-items: center;
+    margin: 12px 0px;
+}
+
+.evaluation img {
+    height: 16px;
+    margin-right: 6px;
+}
+
+.evaluation span {
+    color: #fb6100;
+    font-size: 14px;
+    margin-left: 12px;
+}
+
+.description {
+    font-size: 14px;
+    color: #666666;
+    font-weight: 400;
+}
+
+.standardCost {
+    display: flex;
+    margin: 6px 0px;
+}
+
+.standardCost span {
+    font-size: 13px;
+    color: #666666;
+}
+
+.standardCost img {
+    height: 18px;
+    margin-right: 6px;
+    margin-bottom: 6px;
+}
+
+.time,
+.drivingTime,
+.basketGray {
+    margin-right: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.foodPlate {
+    position: relative;
+    border: 1px solid #D7D7D7;
+    border-radius: 3px;
+    margin-bottom: 16px;
+    padding: 16px;
+    display: flex;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.foodPlate:hover {
+    border: 1px solid #125fca;
+}
+
+.plusDisplay {
+    border: 1px solid #D7D7D7;
+    border-radius: 3px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.plusDisplay h5 {
+    margin: 6px 12px 6px 12px;
+    font-size: 16px;
+    color: #125fca;
+}
+
+.plate img {
+    height: 120px;
+    width: 160px;
+    margin-left: 12px;
+}
+
+.foodContainer {
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.foodContainer h2 {
+    margin-top: 0px;
+}
+
+.foodContainer span {
+    color: #fb6100;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.foodContainer p {
+    margin-top: 0px;
+}
+
+/* shoppingCart */
+.shoppingCart {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    right: 0px;
+    width: 344px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 4px 1px rgb(170 170 170 / 50%);
+    display: flex;
+    flex-direction: column;
+}
+
+.shoppingCart h3 {
+    text-align: center;
+    margin: 20px 0px 20px 0px;
+}
+
+.close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.closeIcon {
+    display: none;
+    cursor: pointer;
+    font-weight: bold;
+    width: 26px;
+    height: 26px;
+    background-color: #fb6100;
+    border-radius: 50%;
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #fb6100;
+}
+
+.closeIcon:hover {
+    border: 1px solid #125fca;
+}
+
+.line {
+    height: 1px;
+    width: 100%;
+    background-color: #D7D7D7;
+}
+
+.orderListing {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.orderListing p {
+    margin: 0px 8px;
+    margin-bottom: 6px;
+}
+
+.basketImg {
+    height: 36px;
+    margin-top: 80px;
+}
+
+.orderListing img {
+    height: 36px;
+}
+
+.minimumOrder {
+    margin: 16px 22px 16px 16px;
+    font-size: 12px;
+}
+
+.amountCost {
+    width: 30px;
+}
+
+.minimumOrder p {
+    font-size: 12px;
+}
+
+.hideBaskted {
+    display: none;
+}
+
+.minimumCost {
+    background-color: #FFECB3;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    font-size: 12px;
+    color: #666666;
+    padding: 16px;
+}
+
+.orderContainer {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #D7D7D7;
+    border-radius: 3px;
+    display: flex;
+    padding: 8px;
+    margin: 8px;
+    color: #0A3847;
+}
+
+.orderNr {
+    width: 18px;
+    text-align: right;
+    font-weight: bold;
+}
+
+.order {
+    width: 265px;
+    margin-left: 12px;
+}
+
+.orderTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.orderTitle strong {
+    text-align: left;
+}
+
+/* .orderTitle span {
+    padding-left: 16px;
+} */
+
+.priceWith {
+    width: 80px;
+    text-align: right;
+}
+
+.choosePortions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+    align-items: center;
+    text-align: start;
+}
+
+.choosePortions span,
+.orderTitle span {
+    color: #0A3847;
+    font-size: 16px;
+    font-weight: 100;
+    margin-bottom: 12px;
+}
+
+.choosePortions span {
+    font-size: 14px;
+    color: #125fca;
+    font-weight: 400;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.choose {
+    display: flex;
+}
+
+.choose img {
+    height: 12px;
+}
+
+.plusButton,
+.minusButton {
+    border: 1px solid #D7D7D7;
+    text-align: center;
+    margin-left: 6px;
+    border-radius: 3px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #125fca;
+    font-size: 28px;
+    padding: 10px;
+}
+
+.plusButton:hover,
+.minusButton:hover {
+    border: 1px solid #125fca;
+}
+
+.costOverview {
+    padding: 8px;
+}
+
+.costDivision,
+.costDivisionLast {
+    display: flex;
+    justify-content: space-between;
+    color: #0A3847;
+    font-weight: 200;
+    margin-bottom: 6px;
+}
+
+.costDivisionLast span {
+    font-weight: bold;
+    color: #0A3847;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.inputBox input {
+    border: 2px solid blue;
+    border-radius: 3px;
+    margin-top: 8px;
+    width: 258px;
+    height: 30px;
+}
+
+.buttonMessage {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 6px;
+}
+
+.buttonMessage button {
+    border: none;
+    background: none;
+    color: #125fca;
+    font-size: 14px;
+    cursor: pointer;
+    margin-left: 12px;
+    padding: 0px 0px 0px 6px;
+}
+
+.buttonMessage button:hover {
+    text-decoration: underline;
+}
+
+.getMessage {
+    font-size: 14px;
+    display: flex;
+}
+
+.stron {
+    color: #0A3847;
+    font-size: 18px;
+}
+
+.costOverview button {
+    border: none;
+    background-color: #125fca;
+    color: white;
+    border-radius: 3px;
+    font-size: 18px;
+    padding: 15px 32px;
+    width: 100%;
+}
+
+.costOverview button:hover {
+    background-color: #146eeb;
+}
+
+.d-none {
+    display: none;
+}
+
+.scroll {
+    overflow-y: scroll;
+}
+
+.basketContainer {
+    display: none;
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    height: 72px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.basketIcon {
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    background-color: #fb6100;
+    border-radius: 50%;
+    left: 37px;
+    bottom: 14px;
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.basketButton {
+    background-color: #125fca;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 6px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.basketButton:hover {
+    background-color: #146eeb;
+}
+
+.basketButton img {
+    height: 24px;
+    margin-left: 16px;
+}
+
+.hide {
+    width: 24px;
+    height: 24px;
+    margin-right: 16px;
+}
+
+.basketButton h3 {
+    color: white;
+    font-size: 18px;
+    text-align: center;
+}
+
+footer {
+    height: 160px;
+    background-color: #0A3847;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 16px;
+}
+
+.footerLogo img {
+    height: 32px;
+}
+
+.footerAGB {
+    display: flex;
+}
+
+.footerAGB a {
+    color: white;
+    text-decoration: none;
+    margin-left: 12px;
+    font-size: 16px;
+}
+
+.footerAGB a:hover {
+    text-decoration: underline;
+}
+
+/* responsive */
+@media (max-width: 900px) {
+    .shoppingCart {
+        display: none;
+    }
+
+    .foodSelection {
+        max-width: 100% !important;
+    }
+
+    .basketContainer {
+        display: flex;
+    }
+
+    .shoppingCartResponsive {
+        display: flex;
+        position: fixed !important;
+        top: 0 !important;
+        left: 0;
+        width: 100%;
+        bottom: 0;
+        z-index: 5;
+        max-height: none !important;
+    }
+
+    .shoppingCart h3 {
+        margin: 0 !important;
+    }
+
+    .close {
+        justify-content: space-between;
+        margin: 20px 16px;
+    }
+
+    .closeIcon {
+        display: flex;
+    }
+
+    .bodyOverflow {
+        overflow: hidden;
+    }
+
+    .orderContainer {
+        width: 80%;
+    }
+
+    .order {
+        width: 100%;
+    }
+
+    .inputBox input {
+        width: calc(100% - 8px);
+    }
+
+    .orderListingBasket {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+
+    .hideBaskted {
+        display: flex;
+        height: 180px;
+        background-color: y;
+    }
+
+    footer {
+        margin-bottom: 60px;
+    }
+}
+
+@media (max-width: 500px) {
+    .foodContainer h2 {
+        margin-right: 30px;
+    }
+
+    .headerAddress {
+        display: none;
+    }
+
+    .foodPlate {
+        flex-direction: column;
+    }
+
+    h2 {
+        margin-top: 26px;
+    }
+
+    .plate img {
+        margin-top: 36px;
+    }
+
+    .titleBox {
+        margin-top: 80px;
+    }
+
+    .time,
+    .drivingTime,
+    .basketGray {
+        flex-direction: column;
+    }
+
+    footer {
+        flex-direction: column;
+        justify-content: center;
+    }
+}

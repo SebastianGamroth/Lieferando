@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lieferando - Bestellseite</title>
+    <link rel="shortcut icon" loading="lazy" href="./img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./fonts.css">
+    <script src="./script.js"></script>
+</head>
+
+<body onload="render(), emptyBasket()" id="body">
+    <!-- header -->
+    <header>
+        <div class="headerLogo">
+            <img src="./img/falcon_logo.png" alt="falcon logo" loading="lazy">
+        </div>
+        <div class="headerAddress">
+            <h4>Beutlinweg 2, 999 Mittelerde</h4>
+        </div>
+        <div class="headerIcons">
+            <img src="./img/flag.png" alt="falg" loading="lazy">
+            <img src="./img/bars.png" alt="bars" loading="lazy">
+        </div>
+    </header>
+
+    <!-- orderPage -->
+    <div class="orderPage">
+
+        <!-- foodSelection -->
+        <div class="foodSelection" id="foodSelection">
+            <img class="footImg" src="./img/chineseFood.jpg" alt="foot01" loading="lazy">
+            <div class="round">
+                <div class="roundIcon">
+                    <img src="./img/logoChina.png" alt="logoChina" loading="lazy">
+                </div>
+            </div>
+
+            <div class="titleBox">
+                <div class="title">
+                    <h1>China Dragon</h1>
+                    <div class="titleIcon">
+                        <img src="./img/info.png" alt="info" loading="lazy">
+                        <img src="./img/heart.png" alt="heart" loading="lazy">
+                    </div>
+                </div>
+                <div class="evaluation">
+                    <img src="./img/star.png" alt="star" loading="lazy">
+                    <img src="./img/star.png" alt="star" loading="lazy">
+                    <img src="./img/star.png" alt="star" loading="lazy">
+                    <img src="./img/star.png" alt="star" loading="lazy">
+                    <img src="./img/starGray.png" alt="star" loading="lazy">
+                    <span>(320 Bewertungen)</span>
+                </div>
+                <div class="standardCost">
+                    <div class="time">
+                        <img src="./img/time.png" alt="time" loading="lazy">
+                        <span>Ab 11:00</span>
+                    </div>
+                    <div class="drivingTime">
+                        <img src="./img/drivingTime.png" alt="drivingTime" loading="lazy">
+                        <span>Min. 2,00&nbsp;€</span>
+                    </div>
+                    <div class="basketGray">
+                        <img src="./img/basketGray.png" alt="basket" loading="lazy">
+                        <span>Min. 13,00&nbsp;€</span>
+                    </div>
+                </div>
+                <p class="description">Bei diesem Restaurant kannst du Glückskekse sammeln. Stelle beim Bestellabschluss
+                    bitte sicher, dass du dich für unseren Newsletter angemeldet hast, um deine Glückskekse per E-Mail
+                    zu
+                    erhalten.</p>
+            </div>
+
+            <div id="foodVariants" class="foodVariants">
+            </div>
+
+        </div>
+
+        <!-- shoppingCart -->
+        <!-- <form onsubmit="formValidation()"> -->
+        <div class="shoppingCart d-none" id="shoppingCart">
+            <div class="close">
+                <h3>Warenkorb</h3>
+                <div onclick="closeBasket()" id="closeIcon" class="closeIcon">X</div>
+            </div>
+            <div class="line"></div>
+            <div class="orderListing scroll" id="orderListing">
+            </div>
+            <div class="minimumOrder d-none" id="minimumOrder">
+            </div>
+            <div class="orderListingBasket" id="orderListingBasket">
+            </div>
+            <div class="hideBaskted"></div>
+        </div>
+        <!-- </form> -->
+
+        <!-- basketButton -->
+        <div class="basketContainer">
+            <div onclick="basketButton()" id="basketButton" class="basketButton">
+                <img src="./img/basketWhite.png" alt="basket" loading="lazy">
+                <div class="basketIcon" id="basketIcon">0</div>
+                <h3 id="basketTotalPrice">Warenkorb</h3>
+                <div class="hide"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="footerLogo">
+            <img src="./img/falcon_logo.png" alt="falcon_logo" loading="lazy">
+        </div>
+        <div class="footerAGB">
+            <a href="#">Impressum</a>
+            <a href="#">Dattenschutz</a>
+        </div>
+    </footer>
+
+</body>
+
+</html>
+
+<!-- indexOf()
+toFixed()
+Array.prototype.filter()
+Array filter()
+Arrow Function -->
