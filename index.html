@@ -6,36 +6,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lieferando - Bestellseite</title>
-    <link rel="shortcut icon" loading="lazy" href="./img/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./fonts.css">
-    <script src="./script.js"></script>
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <script src="./js/templates.js"></script>
+    <script src="./js/script.js"></script>
 </head>
 
-<body onload="render(), emptyBasket()" id="body">
+<body onload="includeHTML(), render(), emptyBasket()" id="body">
     <!-- header -->
-    <header>
-        <div class="headerLogo">
-            <img src="./img/falcon_logo.png" alt="falcon logo" loading="lazy">
-        </div>
-        <div class="headerAddress">
-            <h4>Beutlinweg 2, 999 Mittelerde</h4>
-        </div>
-        <div class="headerIcons">
-            <img src="./img/flag.png" alt="falg" loading="lazy">
-            <img src="./img/bars.png" alt="bars" loading="lazy">
-        </div>
-    </header>
+    <div w3-include-html="./templates/header.html"></div>
 
     <!-- orderPage -->
     <div class="orderPage">
 
         <!-- foodSelection -->
         <div class="foodSelection" id="foodSelection">
-            <img class="footImg" src="./img/chineseFood.jpg" alt="foot01" loading="lazy">
+            <img class="footImg" src="./img/chineseFood.jpg" alt="foot01">
             <div class="round">
                 <div class="roundIcon">
-                    <img src="./img/logoChina.png" alt="logoChina" loading="lazy">
+                    <img src="./img/logoChina.png" alt="logoChina">
                 </div>
             </div>
 
@@ -43,29 +33,29 @@
                 <div class="title">
                     <h1>China Dragon</h1>
                     <div class="titleIcon">
-                        <img src="./img/info.png" alt="info" loading="lazy">
-                        <img src="./img/heart.png" alt="heart" loading="lazy">
+                        <img src="./img/info.png" alt="info">
+                        <img src="./img/heart.png" alt="heart">
                     </div>
                 </div>
                 <div class="evaluation">
-                    <img src="./img/star.png" alt="star" loading="lazy">
-                    <img src="./img/star.png" alt="star" loading="lazy">
-                    <img src="./img/star.png" alt="star" loading="lazy">
-                    <img src="./img/star.png" alt="star" loading="lazy">
-                    <img src="./img/starGray.png" alt="star" loading="lazy">
+                    <img src="./img/star.png" alt="star">
+                    <img src="./img/star.png" alt="star">
+                    <img src="./img/star.png" alt="star">
+                    <img src="./img/star.png" alt="star">
+                    <img src="./img/starGray.png" alt="star">
                     <span>(320 Bewertungen)</span>
                 </div>
                 <div class="standardCost">
                     <div class="time">
-                        <img src="./img/time.png" alt="time" loading="lazy">
+                        <img src="./img/time.png" alt="time">
                         <span>Ab 11:00</span>
                     </div>
                     <div class="drivingTime">
-                        <img src="./img/drivingTime.png" alt="drivingTime" loading="lazy">
+                        <img src="./img/drivingTime.png" alt="drivingTime">
                         <span>Min. 2,00&nbsp;€</span>
                     </div>
                     <div class="basketGray">
-                        <img src="./img/basketGray.png" alt="basket" loading="lazy">
+                        <img src="./img/basketGray.png" alt="basket">
                         <span>Min. 13,00&nbsp;€</span>
                     </div>
                 </div>
@@ -101,7 +91,7 @@
         <!-- basketButton -->
         <div class="basketContainer">
             <div onclick="basketButton()" id="basketButton" class="basketButton">
-                <img src="./img/basketWhite.png" alt="basket" loading="lazy">
+                <img src="./img/basketWhite.png" alt="basket">
                 <div class="basketIcon" id="basketIcon">0</div>
                 <h3 id="basketTotalPrice">Warenkorb</h3>
                 <div class="hide"></div>
@@ -110,15 +100,8 @@
 
     </div>
 
-    <footer>
-        <div class="footerLogo">
-            <img src="./img/falcon_logo.png" alt="falcon_logo" loading="lazy">
-        </div>
-        <div class="footerAGB">
-            <a href="#">Impressum</a>
-            <a href="#">Dattenschutz</a>
-        </div>
-    </footer>
+    <!-- footer -->
+    <div w3-include-html="./templates/footer.html"></div>
 
 </body>
 

@@ -1,6 +1,7 @@
 body {
     margin: 0;
     font-family: 'Plus Jakarta Sans', sans-serif;
+    scroll-behavior: smooth;
 }
 
 h4 {
@@ -594,6 +595,17 @@ footer {
 .footerAGB a:hover {
     text-decoration: underline;
 }
+
+.imprintSection,
+.privacySection,
+.copyRightContainer {
+    margin: 64px 32px;
+}
+
+.copyRightContainer {
+    height: calc(100vh - 357px);
+}
+
 
 /* responsive */
 @media (max-width: 900px) {
